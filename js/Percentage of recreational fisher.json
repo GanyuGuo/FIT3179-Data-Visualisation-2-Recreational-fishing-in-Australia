@@ -9,7 +9,10 @@
       "data": {
         "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/js/Australia.topojson",
         "format": {"type": "topojson", "feature": "1"}
-      }
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+      
     {
       "data": {
         "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/data/Percentage_of_population_recreationally_fish.csv"
