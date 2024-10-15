@@ -14,5 +14,31 @@
 <h1>Recreational Fishing in Australia</h1>
 <div id="vis">
 </div>
+<script type="text/javascript">
+  var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "projection": {
+      "type": "mercator"
+    },
+    "layer": [{
+      "data": {
+        "url": "Australia.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgreen",
+        "stroke": "black"
+      }
+    }]
+  };
+
+  vegaEmbed('#vis', spec);
+  </script>
 </body>
 </html>
