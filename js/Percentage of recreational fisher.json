@@ -10,7 +10,27 @@
         "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/js/Australia.topojson",
         "format": {"type": "topojson", "feature": "1"}
       }
-      
+    {
+      "data": {
+        "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/data/Percentage_of_population_recreationally_fish.csv"
+      },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {
+          "field": "mag",
+          "type": "quantitative",
+          "title": "Magnitude (Richter scale)",
+          "scale": {"domain": [4, 8]}
+        },
+        "color": {
+          "field": "depth",
+          "type": "quantitative",
+          "title": "Depth in km",
+          "scale": {"scheme": "reds"}
+        }
+      }
     }     
     
   ]
