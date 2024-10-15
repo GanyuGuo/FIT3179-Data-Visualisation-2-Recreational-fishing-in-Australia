@@ -12,7 +12,15 @@
 </head>
 <body>
 <h1>Recreational Fishing in Australia</h1>
-<div id="vis">
-</div>
+<div id="vis"></div>
+
+<script type="text/javascript">
+
+  var spec2 = "js/Percentage of recreational fisher.vg.json";
+  vegaEmbed('vis', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
 
 </body>
+</html>
