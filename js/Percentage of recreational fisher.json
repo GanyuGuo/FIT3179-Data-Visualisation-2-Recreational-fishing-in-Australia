@@ -7,7 +7,7 @@
   "layer": [
     {
       "data": {
-        "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/data/Australia.topojson",
+        "url": "https://github.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/blob/main/js/Australia.topojson",
         "format": {"type": "topojson", "feature": "1"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
