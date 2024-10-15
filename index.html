@@ -1,43 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recreational Fishing in Australia</title>
-  <!-- Import Vega and Vega-Lite libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<script src="vega_lite_vis.js"></script>
+<title>Recreational Fishing in Australia </title>
 </head>
 <body>
-  <h1>Recreational Fishing in Australia</h1>
-  <div id="vis"></div>
-  
-  <script type="text/javascript">
-  var spec = {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
-    "projection": {
-      "type": "mercator"
-    },
-    "layer": [{
-      "data": {
-        "url": "https://GanyuGuo.github.io/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/Australia.json",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
-      },
-      "mark": {
-        "type": "geoshape",
-        "fill": "lightgreen",
-        "stroke": "black"
-      }
-    }]
-  };
-
-  vegaEmbed('#vis', spec);
-  </script>
+<h1>Recreational Fishing in Australia</h1>
+<div id="vis">
+</div>
 </body>
 </html>
