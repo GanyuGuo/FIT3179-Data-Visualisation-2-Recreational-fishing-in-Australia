@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recreational Fishing in Australia</title>
+  <!-- Import Vega and Vega-Lite libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <h1>Recreational Fishing in Australia</h1>
+  <div id="vis"></div>
+  
+  <script type="text/javascript">
+  var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "projection": {
+      "type": "mercator"
+    },
+    "layer": [{
+      "data": {
+        "url": "australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgreen",
+        "stroke": "black"
+      }
+    }]
+  };
+
+  vegaEmbed('#vis', spec);
+  </script>
+</body>
+</html>
