@@ -12,7 +12,7 @@
         "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/ne_10m_admin_1_states_provinces.json",
         "format": {
           "type": "topojson",
-          "feature": "selection"
+          "feature": "ne_10m_admin_1_states_provinces"
         }
       },
       "mark": {
@@ -44,7 +44,7 @@
               "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/ne_10m_admin_1_states_provinces.json",
               "format": {
                 "type": "topojson",
-                "feature": "selection"
+                "feature": "ne_10m_admin_1_states_provinces"
               }
             },
             "key": "properties.name",
