@@ -10,54 +10,33 @@
     {
       "data": {
         "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/ne_10m_admin_1_states_provinces.json",
-        "format": {
-          "type": "topojson",
-          "feature": "ne_10m_admin_1_states_provinces"
-        }
+        "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
       },
-      "mark": {
-        "type": "geoshape",
-        "fill": "white",
-        "stroke": "black",
-        "strokeWidth": 5
-      },
-      "encoding": {
-        "color": {
-          "field": "percentage",
-          "type": "quantitative",
-          "title": "Percentage of Population"
-        }
-      }
+      
     },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/data/Percentage_of_population_recreationally_fish.csv",
-        "format": {
-          "type": "csv"
-        }
-      },
+    
       "transform": [
         {
-          "lookup": "State",
+          "lookup": "States",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/ne_10m_admin_1_states_provinces.json",
-              "format": {
-                "type": "topojson",
-                "feature": "ne_10m_admin_1_states_provinces"
-              }
-            },
-            "key": "properties.name",
+              "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/data/Percentage_of_population_recreationally_fish.csv",
+              },
+            "key": "States",
             "fields": ["percentage"]
           }
         }
       ],
-      "mark": {
-        "type": "geoshape",
-        "fill": "white",
-        "stroke": "gray",
-        "strokeWidth": 0.5
-      }
+      "projection": {
+    "type": "albersUsa"
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "percentage",
+      "type": "quantitative"
     }
+  }
+    
   ]
 }
