@@ -28,34 +28,5 @@
         }
       }
     },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/data/Percentage_of_population_recreationally_fish.csv",
-        "format": {
-          "type": "csv"
-        }
-      },
-      "transform": [
-        {
-          "lookup": "name",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/Australia.topojson",
-              "format": {
-                "type": "topojson",
-                "feature": "selection"
-              }
-            },
-            "key": "properties.name",
-            "fields": ["percentage"]
-          }
-        }
-      ],
-      "mark": {
-        "type": "geoshape",
-        "stroke": "black",
-        "strokeWidth": 0.5
-      }
-    }
   ]
 }
