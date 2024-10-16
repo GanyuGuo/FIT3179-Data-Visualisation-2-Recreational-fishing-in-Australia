@@ -42,7 +42,31 @@
       
       
       
-    }
+    },
+    {
+    "data": {
+        "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/main/js/ne_10m_admin_1_states_provinces.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_10m_admin_1_states_provinces"
+        }
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "color": "black",
+        "dx": 0,   
+        "dy": 0
+      },
+      "encoding": {
+        "text": {"field": "properties.name"},  
+        "longitude": {"field": "properties.longitude"}, 
+        "latitude": {"field": "properties.latitude"},   
+        "tooltip": {"field": "properties.name", "title": "State"}
+      }
+  }
+    
     
   ]
+  
 }
