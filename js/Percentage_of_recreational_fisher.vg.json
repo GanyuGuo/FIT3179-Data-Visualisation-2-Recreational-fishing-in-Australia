@@ -37,7 +37,7 @@
       },
       "transform": [
         {
-          "lookup": "State",
+          "lookup": "name",
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/js/Australia.topojson",
