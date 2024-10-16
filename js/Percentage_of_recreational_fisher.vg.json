@@ -19,11 +19,11 @@
         "type": "geoshape",
         "fill": "white",
         "stroke": "black",
-        "strokeWidth": 1
+        "strokeWidth": 5
       },
       "encoding": {
         "color": {
-          "field": "properties.percentage",
+          "field": "percentage",
           "type": "quantitative",
           "title": "Percentage of Population"
         }
