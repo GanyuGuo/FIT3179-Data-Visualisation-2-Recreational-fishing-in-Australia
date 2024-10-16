@@ -13,23 +13,36 @@
           "feature": "ne_10m_admin_1_states_provinces"
         }
       },
+      "transform": [{
+        "lookup": "properties.name",
+        "from":{
+                "data":{
+                        "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/data/Percentage_of_population_recreationally_fish.csv"
+                      },
+                "key": "name",
+                "fields": ["Percentage"]
+                }
+      
+      }],
+      
+      
       "mark": {
         "type": "geoshape",
         "fill": "lightblue",
         "stroke": "white"
-      }
-      
-    },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/GanyuGuo/FIT3179-Data-Visualisation-2-Recreational-fishing-in-Australia/refs/heads/main/data/Percentage_of_population_recreationally_fish.csv",
-        "format": {"type": "csv"}
       },
-      
-      "mark": {
-        "type": "geoshape"
+      "encoding": {
+        "color":{
+          "field":"Percentage",
+          "type": "quantitative",
+          "scale": {"domain": [0, 35]},
+          "title":"Percentage of Population"
+        }
       }
+      
+      
       
     }
+    
   ]
 }
