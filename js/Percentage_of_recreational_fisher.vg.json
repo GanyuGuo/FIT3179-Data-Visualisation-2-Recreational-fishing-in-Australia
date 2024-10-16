@@ -20,13 +20,6 @@
         "stroke": "white",
         "strokeWidth": 1
       },
-      "encoding": {
-        "color": {
-          "field": "properties.percentage",
-          "type": "quantitative",
-          "title": "Percentage of Population"
-        }
-      }
     },
   ]
 }
